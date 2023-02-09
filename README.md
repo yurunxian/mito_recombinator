@@ -1,7 +1,7 @@
 # Introduction
 
 Plant mitogenomes (mitochondrial genomes) harbor variable repetitive content. These repetitive elements can sometimes mediate DNA recombination, which results in low-frequency alternative conformation of mtDNA. In the past, researchers usually used molecular experiments (e.g. PCR) to verify the existence of alternative conformations. Nowadays, application of high-throughput sequencing (especially NGS) greatly facilitates the detection of repeat-mediated recombination. By constructing alternative conformations and mapping high-throughput reads to them, one can easily confirm the recombination if the (paired) reads span the repeat and its putative flanking sequences (Fig.1).<br /><br />
-![image](https://user-images.githubusercontent.com/48025559/217754280-b7a2258c-e800-424e-b443-3a0faedcc5fd.png)
+![image](https://user-images.githubusercontent.com/48025559/217806157-21f7c74b-9b02-4719-9551-4190288a18bf.png)
 Fig.1 Detection of repeat-mediated recombination with NGS reads<br /><br />
 
 Here, I provide a pipeline to construct alternative conformations and calculate recombination frequency for plant mitogenomes.
