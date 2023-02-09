@@ -17,12 +17,12 @@ Use **recombination.pl** to construct four conformations for each repeat (two ge
 This script only process repeat pair (two-copy sequence) that meets the following standards:
 > (1) There is no overlap and a >50 bp distance between copies.<br />
 > (2) At least one copy has no overlap with another larger repetitive sequence.<br />
-> (3) To avoid the influence of nested tandem repeats (especially for large repeat), for each alternative conformation, the core repetitive sequence and its [half of the insert size for paired reads (350 bp in this case)] bp flanking sequences should not have an identical couterpart in the other alternative conformation.
+> (3) To avoid the influence of nested tandem repeats (especially for large repeat), for each alternative conformation, the core repetitive sequence and its [half of the insert size for paired reads (350 bp in this case)] bp flanking sequences should not have an identical counterpart in the other alternative conformation.
 
 Step 3. <br />
-Map your mitochondrial reads (of course paired) to <conformation.txt> and get the sam file.
-`bowtie2-build <conformation.txt> conformation`
-`bowtie2 -x conformation -1 <left.fq> -2 <right.fq> --end-to-end --no-discordant --no-mixed --very-fast -p 20 --no-unal -S <conformation.sam>`
+Map your mitochondrial reads (of course paired) to <conformation.txt> and get the sam file.<br />
+`bowtie2-build <conformation.txt> conformation`<br />
+`bowtie2 -x conformation -1 <left.fq> -2 <right.fq> --end-to-end --no-discordant --no-mixed --very-fast -p 20 --no-unal -S <conformation.sam>`<br />
 Extract the key information from your sam file.
 `cut -f1,3,4,6,9 <conformation.sam> <conformation.txt>`
 
