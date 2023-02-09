@@ -23,7 +23,7 @@ Step 3. <br />
 Map your mitochondrial reads (of course paired) to <conformation.txt> and get the sam file.<br />
 `bowtie2-build <conformation.txt> conformation`<br />
 `bowtie2 -x conformation -1 <left.fq> -2 <right.fq> --end-to-end --no-discordant --no-mixed --very-fast -p 20 --no-unal -S <conformation.sam>`<br />
-Extract the key information from your sam file.
+Extract the key information from your sam file.<br />
 `cut -f1,3,4,6,9 <conformation.sam> <conformation.txt>`
 
 Step 4. <br />
