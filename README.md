@@ -9,7 +9,7 @@ Here, I provide a pipeline to construct alternative conformations and calculate 
 # Pipeline
 
 Step 1. <br />
-Identify dispersed repeats for your mitogenomes with ROUSFinder.py (https://doi.org/10.25387/g3.7425680). This useful script is written in Python2 and will call BLASTN to find repeats. It is worth mentioning that its output will NOT include the contig name for each repeat. Users can manually modified the [Line:239] to make it output these information in <*_rep_table.txt> file, which is needed in the next step.
+Identify dispersed repeats for your mitogenomes with ROUSFinder.py (https://doi.org/10.25387/g3.7425680). This useful script is written in Python2 and will call BLASTN to find repeats. It is worth mentioning that its output will NOT include the contig name for each repeat. Users can manually modify the [Line:239] to make it output these information in <*_rep_table.txt> file, which is needed in the next step.
 
 Step 2. <br />
 Use **recombination.pl** to construct four conformations for each repeat (two genomic and two alternative). Each conformation contains the repetitive sequence itself and 300 bp flanking sequences. <br />
